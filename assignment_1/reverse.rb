@@ -1,2 +1,2 @@
-a= *('a'..'z').to_a.each {|n| puts n.reverse}
+a= ('a'..'z').to_a.reverse.each{|n| puts n}
 
