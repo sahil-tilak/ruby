@@ -1,4 +1,4 @@
-words_arr = ['mobile', 'bottle', 'scissor']
+words_arr = ['mobile', 'bottle', 'scissor', 'coffee', 'blogger', 'titan', 'integrity', 'passion', 'technology']
 
 def alphabet_input
   @char = gets.chomp
@@ -23,15 +23,15 @@ words_arr.shuffle.each do |word|
     @blank_arr.push ("_")
   end
   n = 5
-  puts word.length
+  puts"Number of alphabets:#{word.length}"
   while n > 0
-    print "Enter alphabet: "
+    print "\nEnter alphabet: "
     alphabet_input
     if includes_alphabet(word)
        alphabet_index_many(word)
     else
       n -= 1
-      puts "Number of chances : #{n}"
+      puts "Wrong alphabet. Number of chances : #{n}"
     end
     if word == @blank_arr.join
       puts "\nSuccess"
