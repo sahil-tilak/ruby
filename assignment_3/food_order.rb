@@ -1,9 +1,7 @@
 class Order
-  attr_accessor :order_name, :order_id, :order_status
+  attr_accessor :order_name 
   def initialize 
     @order_name 
-    @order_id 
-    @order_status
     @menu_arr = ["FRIED RICE","SZN FRIED RICE","SPRING ROLL","D","E","F"]
   end
 
